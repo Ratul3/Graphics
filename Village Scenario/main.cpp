@@ -13,8 +13,7 @@ GLfloat position5 = 0.0f;
 GLfloat speed = 0.1f;
 GLfloat speed1 = 0.08f;
 GLfloat speed2 = 0.05f;
-int day=1;
-int night=1;
+
 float e=0.90,f=0.91,g=0.98;
 float h=0.0,i=0.9,j=0.9;
 int k=248,l=248,m=255;
@@ -323,7 +322,7 @@ glPopMatrix();
 
 
 
-void day_object(){
+void object(){
 
 glColor3ub (169, 242, 242);    //river
 	 glBegin(GL_QUADS);
@@ -632,7 +631,7 @@ void display() {
 
 glClear(GL_COLOR_BUFFER_BIT);
 glLoadIdentity();
-day_object();
+object();
 sun();
 clouds();
 tree();
